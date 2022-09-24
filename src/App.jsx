@@ -17,7 +17,7 @@ export default function App() {
 
         <section className='home featured'>
           <h2 className='featured section-title'>Featured Projects</h2>
-          <div className='featured container'>
+          <div className='featured projects'>
             <div className='featured project one'>
               <p>Project 1</p>
             </div>

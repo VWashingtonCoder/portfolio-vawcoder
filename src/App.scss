@@ -11,10 +11,11 @@ $test-border: 3px solid white;
 .home {
     border: $test-border;
 }
-.featured.container {
+.featured.projects {
     display: flex;
     justify-content: space-evenly;
 }
 .featured.project{
     border: $test-border;
+    width: 32%;
 }
