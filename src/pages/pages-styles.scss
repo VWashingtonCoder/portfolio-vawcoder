@@ -1,0 +1,9 @@
+$main-text: white;
+$test-border: 3px solid white;
+
+.container {
+    color: $main-text;
+    border: $test-border;
+    margin: 2%;
+    margin-left: 26%;
+}

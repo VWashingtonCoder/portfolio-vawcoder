@@ -1,45 +1,35 @@
 import './App.scss';
-import { FaGithubSquare, FaLinkedin, FaMedium } from "react-icons/fa"
-import logo from './images/vawcoder-logo.png'
-
+import Navbar from './components/Navbar';
 
 export default function App() {
   return (
     <div id='app-container'>
-      <section id='nav-bar'>
-        <img src={logo} alt='logo' id='nav-img'/>
-        <h1 id='title'>V. Andreaus Washington</h1>
-        <nav id='nav-btns'>
-          <button className='nav-btn'>Home</button>
-          <button className='nav-btn'>Portfolio</button>
-          <button className='nav-btn'>About Me</button>
-        </nav>
-        <div id='contact-links'>
-          <a 
-            href="https://github.com/VWashingtonCoder" 
-            className='contact github' 
-            target='_blank' rel="noreferrer"
-          >
-            <FaGithubSquare className='icon'/>
-          </a>
-          <a 
-            href="https://www.linkedin.com/in/vincent-washington/" 
-            className='contact linkedin' 
-            target='_blank' 
-            rel="noreferrer"
-          >
-            <FaLinkedin className='icon'/>
-          </a>
-          <a 
-            href="https://medium.com/@kuraiokamiblaze" 
-            className='contact medium' 
-            target='_blank'
-            rel="noreferrer"
-          >
-            <FaMedium className='icon'/>
-          </a>
-        </div>
-      </section>
+      <Navbar />
+
+      <main id='home-container'>
+        <header className='home head'>
+          <h1>Full Stack Web Developer</h1>
+        </header>
+
+        <section className='home banner'>
+          <h2>Banner Section</h2>
+        </section>
+
+        <section className='home featured'>
+          <h2 className='featured section-title'>Featured Projects</h2>
+          <div className='featured container'>
+            <div className='featured project one'>
+              <p>Project 1</p>
+            </div>
+            <div className='featured project two'>
+              <p>Project 2</p>
+            </div>
+            <div className='featured project three'>
+              <p>Project 3</p>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
   );
 }
