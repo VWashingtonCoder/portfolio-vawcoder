@@ -1,5 +1,7 @@
 import './App.scss';
 import Navbar from './components/Navbar';
+import Banner from "./images/app/home-banner.png";
+
 
 export default function App() {
   return (
@@ -8,24 +10,26 @@ export default function App() {
 
       <main id='home-container'>
         <header className='home head'>
-          <h1>Full Stack Web Developer</h1>
+          <img src={Banner} alt="Home Banner" id='banner-image' />
         </header>
 
-        <section className='home banner'>
-          <h2>Banner Section</h2>
-        </section>
-
         <section className='home featured'>
-          <h2 className='featured section-title'>Featured Projects</h2>
+          <h2 className='featured section-title'>Check Out My Work In The Galleries Below</h2>
           <div className='featured projects'>
             <div className='featured project one'>
-              <p>Project 1</p>
+            <a href='/' className='gallery-title'>
+                HTML/CSS 
+              </a>
             </div>
             <div className='featured project two'>
-              <p>Project 2</p>
+            <a href='/' className='gallery-title'>
+                JavaScript
+              </a>
             </div>
             <div className='featured project three'>
-              <p>Project 3</p>
+              <a href='/' className='gallery-title'>
+                React
+              </a>
             </div>
           </div>
         </section>

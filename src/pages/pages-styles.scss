@@ -6,4 +6,37 @@ $test-border: 3px solid white;
     border: $test-border;
     margin: 2%;
     margin-left: 26%;
+    text-align: center;
+}
+#page-title { 
+    font-size: 80px;
+    margin-bottom: 3%; 
+}
+#bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bio.pic {
+    border-radius: 50%;
+    width: 30%;
+}
+.bio.text {
+    border-radius: 50%;
+    width: 45%;
+    margin-left: 5%;
+    text-align: left;
+    margin-bottom: 3%;
+}
+.summary.subtitle {
+    font-size: 52px;
+    width: max-content;
+    margin-bottom: 0;
+}
+.summary.text {
+    margin-top: 3%;
+    font-size: 40px;
+}
+#certifications {
+    margin-left: 2%;
 }

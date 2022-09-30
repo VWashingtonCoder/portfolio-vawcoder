@@ -1,21 +1,30 @@
-$test-border: 3px solid white; 
+$home-border: 3px solid white; 
 
 #home-container { 
     margin: 2%;
-    margin-left: 26%;
+    margin-left: 27%;
     color: white;
-    text-align: center;
-    /**/
-    border: $test-border;
+    text-align: center;   
 }
-.home {
-    border: $test-border;
+#banner-image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.home.featured {
+    border: $home-border;
+    padding-bottom: 25px;
 }
 .featured.projects {
     display: flex;
     justify-content: space-evenly;
 }
 .featured.project{
-    border: $test-border;
+    border: $home-border;
     width: 32%;
+}
+.featured.section-title { font-size: 36px; }
+.gallery-title {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
 }

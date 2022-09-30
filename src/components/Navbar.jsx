@@ -1,6 +1,6 @@
 import './comp-styles.scss';
 import { Link } from "react-router-dom";
-import logo from '../images/vawcoder-logo.png';
+import logo from '../images/navbar/vawcoder-logo.png';
 import { FaGithubSquare, FaLinkedin, FaMedium } from "react-icons/fa";
 
 export default function Navbar() {
@@ -13,8 +13,8 @@ export default function Navbar() {
 
             <nav id='nav-links'>
                 <Link to='/' className='nav-link' >Home</Link>
-                <Link to='/portfolio' className='nav-link' >Portfolio</Link>
                 <Link to='/about' className='nav-link' >About Me</Link>
+                <Link to='/portfolio' className='nav-link' >Portfolio</Link>
             </nav>
 
             <footer id='social-links'>
